@@ -174,8 +174,6 @@ The plot of the KM estimator against time is called the **Kaplan-Meier survival 
 | 4079 | 14     | 1       | 0.344    |
 | 4191 | 10     | 1       | 0.309    |
 
-<div class="section">
-	<h2>Log-Rank Tests</h2>
-</div>
+### Log-Rank Test
 To compare two survival curves, we can use the **log-rank test**.
 
