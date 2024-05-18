@@ -52,21 +52,9 @@ Cirrhosis is severe scarring of the liver. This condition can be caused by many 
 </p>
 </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaplan-Meier Estimator</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
+$(".latex").latex();
 
-<body>
-    <h1>Kaplan-Meier Estimator</h1>
-    <p>
-        The Kaplan-Meier estimator is given by:
-        <span id="km-estimator">\[
-        \hat{S}(t) = \prod_{i: t_i \leq t} \left(1 - \frac{e_i}{n_i}\right)
-        \]</span>
-    </p>
-</body>
-</html>
+
+<div class="latex">  
+    \int_{0}^{\pi}\frac{x^{4}\left(1-x\right)^{4}}{1+x^{2}}dx =\frac{22}{7}-\pi  
+</div>
