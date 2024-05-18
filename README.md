@@ -44,12 +44,6 @@ Cirrhosis is severe scarring of the liver. This condition can be caused by many 
 <p>
 	During 1974 to 1984, 424 primary biliary cirrhosis (PBC) patients referred to a Mayo Clinic study were qualified for the randomized placebo-controlled trial testing on the drug D-penicillamine. Of these, 312 patients were followed through the trial and have mostly comprehensive data. The remaining 112 patients did not join the clinical trail, but agreed to record basic metrics and undergo survival tracking. By the end of the study, data was collected from 106 of these individuals along with the initial 312 who were participating in the trial. Penicillamine is a chelating agent that binds to excess copper and removes it from the blood stream. It is often prescribed to treat rheumatoid arthiritis, Wilson’s disease, and kidney stones. If the liver is unable to process substances like iron and copper, they can build up to dangerously high levels and cause cirrhosis as they damage your liver tissues over time. Mutation in particular genes is also suggested to contribute to cirrhosis.
 </p>
-
-<div class="section">
-	<h3>Kaplan-Meier Estimator and Curve</h3>
-<p>
-	The data consists of the survival times or times to event for 418 individuals from the study. The specificity of the data is tht they may include censored observations. An observation is censored if it is known that the person survived (or hasn't experienced the event) up to a certain time but nothing is known afterwards. It happens when the individual drops out of the study. The <b>Kaplan-Meier (KM) product-limit estimator</b> of the survival function is:<br>
-</p>
 	
 ### Kaplan-Meier Estimator and Curve
 
@@ -60,5 +54,4 @@ Denote by $n_i, i = 1, ..., k$, the number of individuals still alive (or those 
 The **Kaplan-Meier (KM) product-limit estimator** of the survival function is:
 
 ![Kaplan-Meier Estimator](https://latex.codecogs.com/svg.latex?\hat{S}(t)=\prod_{i:t_i\leq{t}}\left(1-\frac{e_i}{n_i}\right))
-</div>
 
