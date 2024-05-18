@@ -39,3 +39,5 @@ Cirrhosis is severe scarring of the liver. This condition can be caused by many 
 	<li>Histologic Stage of Disease</li>
 </ul>
 	<p>
+ After removing missing values, there were 276 observations remaining.
+
