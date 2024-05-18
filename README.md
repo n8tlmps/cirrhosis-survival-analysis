@@ -55,3 +55,7 @@ The **Kaplan-Meier (KM) product-limit estimator** of the survival function is:
 
 ![Kaplan-Meier Estimator](https://latex.codecogs.com/svg.latex?\hat{S}(t)=\prod_{i:t_i\leq{t}}\left(1-\frac{e_i}{n_i}\right))
 
+The plot of the KM estimator against time is called the **Kaplan-Meier survival curve**. It is a step function with vertical lines corresponding to the event times. Times when censoring occurs are marked by some symbol. When censoring coincides with an event time, the convention is to put the symbol at the bottom of the step. The KM estimator was computed and the KM curve was plotted using R.
+
+
+
