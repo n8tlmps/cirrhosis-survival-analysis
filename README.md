@@ -17,13 +17,25 @@ Cirrhosis is severe scarring of the liver. This condition can be caused by many 
 	<p> The dataset was obtained from the UCI Machine Learning Repository, a collection of databases, domain theories, and data generators that are used by the machine learning community for the empirical analysis of machine learning algorithms. It contained 418 observations and 20 variables that featured:
 </div>
 <ul>
-	<li>ID
-	<li>Number of days between registration and the earlier of death, transplantation or study analysis time
-	<li>Status of the patient
-	<li>Type of drug: D-penicillamine or Placebo
-	<li>Age
-	<li>Sex: Male or Female
-	<li>Presence of Ascities
+	<li>ID</li>
+	<li>Number of days between registration and the earlier of death, transplantation or study analysis time</li>
+	<li>Status of the patient</li>
+	<li>Type of drug: D-penicillamine or Placebo</li>
+	<li>Age</li>
+	<li>Sex: Male or Female</li>
+	<li>Presence of Ascities</li>
 	<li>Presence of Hepatomegaly</li>
+	<li>Presence of Spiders</li>
+	<li>Presence of Edema</li>
+	<li>Bilirubin</li>
+	<li>Cholesterol</li>
+	<li>Albumin</li>
+	<li>Copper</li>
+	<li>Alkaline Phosphatase</li>
+	<li>SGOT</li>
+	<li>Tryglicerides</li>
+	<li>Platelets per cubic</li>
+	<li>Prothrombin time</li>
+	<li>Histologic Stage of Disease</li>
 </ul>
 	<p>
