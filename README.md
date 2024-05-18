@@ -12,10 +12,6 @@
 Cirrhosis is severe scarring of the liver. This condition can be caused by many forms of liver diseases and conditions, such as hepatitis or chronic alcohol consumption. Each time your liver is injured, scar tissue forms in the healing process. The accumulation of scar tissue replaces more of the healthy liver tissue as cirrhosis worsens, impairing the liver’s functionality. Advanced cirrhosis can be life-threatening. This project aims to understand the probability of cirrhosis survival and to analyze the underlying factors influencing survival time.
 </div>
 
-
-    <h2><a href="https://public.tableau.com/app/profile/nate.talampas/viz/HealthStockMarket/Dashboard1">Tableau Interactive Dashboard</a></h2>
-
-    
 <div class="section">
 	<h2>Dataset Information</h2>
 	<p> The dataset was obtained from the <a href="https://archive.ics.uci.edu/dataset/878/cirrhosis+patient+survival+prediction+dataset-1">UCI Machine Learning Repository</a>, a collection of databases, domain theories, and data generators that are used by the machine learning community for the empirical analysis of machine learning algorithms. It contained 418 observations and 20 variables that featured:
