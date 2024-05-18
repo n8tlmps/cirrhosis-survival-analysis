@@ -177,6 +177,6 @@ The plot of the KM estimator against time is called the **Kaplan-Meier survival 
 <div class="section">
 	<h2>The Log-Rank Test</h2>
 </div>
-###
+### Log-Rank Test
 To compare two survival curves, we can use the **log-rank test**. The hypotheses are: $H_0: S_1(t) = S_2(t)$ for all values of $t$ vs $H_1: S_1(t) \neq S_2(t)$ for at least one value of $t$. Under the $H_0$, $e_{1i}$ has a hypergeometric distriubtion with parameters $n_i$ (the population size), $n_{1i}$ (the size of the group of interest in the population), and $e_i$) (the sample size). The mean and the variance of $e_{1i}$ are $E(e_{1i})=\frac{n_{1i}e_i}{n_i}$ and $\text{Var}(e_{1i})=\frac{n_{1i}n_{2i}(n_i-e_i)e_i}{n_i^2(n_i-1)}$
 
