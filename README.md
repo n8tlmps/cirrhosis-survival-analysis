@@ -55,7 +55,7 @@ Cirrhosis is severe scarring of the liver. This condition can be caused by many 
 
 The data consists of the survival times or times to event for 418 individuals from the study. The specificity of the data is that they may include censored observations. An observation is censored if it is known that the person survived (or hasn't experienced the event) up to a certain time but nothing is known afterwards. It happens when the individual drops out of the study.
 
-$n_i$
+Denote by $n_i, i = 1, ..., k$
 
 The **Kaplan-Meier (KM) product-limit estimator** of the survival function is:
 
