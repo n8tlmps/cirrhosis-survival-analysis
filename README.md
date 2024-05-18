@@ -177,4 +177,5 @@ The plot of the KM estimator against time is called the **Kaplan-Meier survival 
 <div class="section">
 	<h2>Log-Rank Tests</h2>
 </div>
+To compare two survival curves, we can use the **log-rank test**. The hypothesis are $H_0: S_1(t) = S_2(t) for all values of t$
 
