@@ -46,5 +46,8 @@ Cirrhosis is severe scarring of the liver. This condition can be caused by many 
 
 <div class="section">
 	<h3>Kaplan-Meier Estimator and Curve</h3>
-The data consists of the survival times or times to event for 418 individuals from the study. The specificity of the data is tht they may include censored observations. An observation is censored if it is known that the person survived (or hasn't experienced the event) up to a certain time but nothing is known afterwards. It happens when the individual drops out of the study. Denote by #/n_i
+The data consists of the survival times or times to event for 418 individuals from the study. The specificity of the data is tht they may include censored observations. An observation is censored if it is known that the person survived (or hasn't experienced the event) up to a certain time but nothing is known afterwards. It happens when the individual drops out of the study. The Kaplan-Meier estimator is given by:
+        <span id="km-estimator">\[
+        \hat{S}(t) = \prod_{i: t_i \leq t} \left(1 - \frac{e_i}{n_i}\right)
+        \]</span>
 </div>
