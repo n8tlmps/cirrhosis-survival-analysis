@@ -183,3 +183,5 @@ To compare two survival curves, we can use the **log-rank test**. The hypotheses
 <img src="https://latex.codecogs.com/svg.image?z=\frac{\sum_{i=1}^{k}(e_{1i}-E(e_{1i}))}{\sqrt{\sum_{i=1}^{k}\text{Var}(e_{1i})}}" />
 
 Under $H_0$, this test statistic has approximately a $\mathcal{N}(0, 1)$ distribution. Equivalently, $z^2$ may be chosen as the test statistic. It has approximately a chi-square distribution with one degree of freedom.
+
+The survival curves of different patient groups were tested in R.
