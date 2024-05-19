@@ -229,4 +229,5 @@ The two-sided P-value is $2P(Z > 10.4880) = <2e^{-16}$, hence we reject $H_0$ an
 <p>Suppose that besides the event time and an indicator of censoring, data contain measurements of a set of predictors $x_1, ..., x_m$ that do not vary with time. Denote the event time by $T$ and assume that it is a random variable with the hazard function $h_T(t)$. The <b>Cox proportional hazards model</b> assumes that the hazard function has the form:</p>
 <img src="https://latex.codecogs.com/svg.image?&space;h_t(t,x_1,...,x_m,\beta_1,...,\beta_m)=h_0(t)exp(\beta_1&space;x_1&plus;...&plus;\beta_m&space;x_m)" />
 <p>Note that in this model, the hazard function depends on time only through the <b>baseline hazard function</b> $h_0(t)$, and therefore, the ratio of hazards of two individuals does not depend on time, which means that the hazards are <b>proportional</b> over time.</p>
-
+<p>The unknowns of this model are the baseline hazard function $h_0(t)$, we introduce another formulation of the Cox PH model, in terms of the survival function. We write:</p>
+<img src="https://latex.codecogs.com/svg.image?S_T(t,x_1,...,x_m,\beta_1,...,\beta_m)=\exp\left\{-\int_{0}^{t}h_T(u,x_1,\ldots,x_m,\beta_1,\ldots,\beta_m)\,du\right\}=\exp\left\{-\int_{0}^{t}h_0(u)\exp(\beta_1&space;x_1&plus;\ldots&plus;\beta_m&space;x_m)\,du\right\}=[S_0(t)]^{r}" />
