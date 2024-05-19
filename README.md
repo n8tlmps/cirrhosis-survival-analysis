@@ -189,3 +189,5 @@ The log-rank tests were performed on different patient groups using SAS at the 5
 <li>Male vs. Female</li>
 <li>Presence of Hepatomegaly vs. No Presence</li>
 <li>Presence of Ascites vs. No Ascites</li>
+
+<img src="drug.jpg">
