@@ -193,5 +193,5 @@ The log-rank tests were performed on different patient groups using SAS at the 5
 
 <img src="drug.jpg">
 
-The two-sided value is $2P(Z > 0.6363) = 0.5246$.
+The two-sided P-value is $2P(Z > 0.6363) = 0.5246$, hence we fail to reject $H_0$ and conclude that the two survival curves for the D-penicillamine and Placebo groups are not significantly different.
 
