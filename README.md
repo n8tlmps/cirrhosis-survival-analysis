@@ -223,5 +223,5 @@ The two-sided P-value is $2P(Z > 5.2058) = 2e^{-07}$, hence we reject $H_0$ and 
 |-------------------------------|---------|
 |110                            |<2e-16   |
 
-The two-sided P-value is $2P(Z > 10.4880) = <2e^{-17}$, hence we reject $H_0$ and conclude that the two survival curves for patients with ascites and those with no ascites are significantly different. The curve for patients with ascites lies drastically below that for patients with no ascites, indicating that presence of ascites is a risk factor for shorter life span.
+The two-sided P-value is $2P(Z > 10.4880) = <2e^{-16}$, hence we reject $H_0$ and conclude that the two survival curves for patients with ascites and those with no ascites are significantly different. The curve for patients with ascites lies drastically below that for patients with no ascites, indicating that presence of ascites is a risk factor for shorter life span.
 
