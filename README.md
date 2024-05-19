@@ -184,6 +184,8 @@ To compare two survival curves, we can use the **log-rank test**. The hypotheses
 
 Under $H_0$, this test statistic has approximately a $\mathcal{N}(0, 1)$ distribution. Equivalently, $z^2$ may be chosen as the test statistic. It has approximately a chi-square distribution with one degree of freedom.
 
-The log-rank tests were performed on different patient groups at the 5% level:
-<li>D-penicillamine vs. Placebo, Male vs. Female, Presence of
-Hepatomegaly vs. No Hepatomegaly, and Presence of Ascites vs. No Ascites.
+The log-rank tests were performed on different patient groups using R at the 5% level:
+<li>D-penicillamine vs. Placebo</li>
+<li>Male vs. Female</li>
+<li>Presence of Hepatomegaly vs. No Presence</li>
+<li>Presence of Ascites vs. No Ascites</li>
