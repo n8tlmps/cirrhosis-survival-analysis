@@ -227,6 +227,5 @@ The two-sided P-value is $2P(Z > 10.4880) = <2e^{-16}$, hence we reject $H_0$ an
 
 <h2> Cox Proportional Hazards Model </h2>
 
-<p>
-	Suppose that besides the event time and an indicator of censoring, data contain measurements of a set of predictors $x_1, ..., x_m$ that do not vary with time. Denote the event time by $T$ and assume that it is a random variable with the hazard function $h_T(t)$. The <b>Cox proportional hazards model</b> assumes that the hazard function has the form: $ h_t(t,x_1,...,x_m,\beta_1,...,\beta_m) = h_0(t)exp(\beta_1 x_1 + ... + \beta_m x_m)$
-</p>
+	Suppose that besides the event time and an indicator of censoring, data contain measurements of a set of predictors $x_1, ..., x_m$ that do not vary with time. Denote the event time by $T$ and assume that it is a random variable with the hazard function $h_T(t)$. The <b>Cox proportional hazards model</b> assumes that the hazard function has the form:
+
