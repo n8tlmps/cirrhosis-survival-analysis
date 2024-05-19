@@ -203,7 +203,16 @@ The two-sided P-value is $2P(Z > 0.6325) = 0.5$, hence we fail to reject $H_0$ a
 
 | Chisq on 1 degrees of freedom | P-Value |
 |-------------------------------|---------|
-|4.5                            |0.03      |
+|4.5                            |0.03     |
 
 The two-sided P-value is $2P(Z > 2.1213) = 0.03$, hence we reject $H_0$ and conclude that the two survival curves for male and female patients are marginally different. The proportion of females to males must also be taken into consideration when comparing probability of survival between the two groups as there were 242 females and 34 males registered in the study.
+
+### Hepatomegaly vs. No Hepatomegaly
+<img src="hepatomegaly.jpg />
+
+| Chisq on 1 degrees of freedom | P-Value |
+|-------------------------------|---------|
+|27.1                           |2e-07    |
+
+The two-sided P-value is $2P(Z > 5.2058) = 2e-07$, hence we reject $H_0$ and conclude that the two survival curves for patients with hepatomegaly and those with no hepatomegaly are significantly different. The curve for patients with hepatomegaly lies below that for patients with no hepatomegaly-- indicating that presence of hepatomegaly is a risk factor for shorter life span.
 
