@@ -259,7 +259,7 @@ The two-sided P-value is $2P(Z > 10.4880) = <2e^{-16}$, hence we reject $H_0$ an
 |stage.rel3               |1.683e+00|0.10968|
 |stage.rel4               |2.119e+00|0.04711 *|
 
-| Time | Risk | Event | Survival |
+| Time | Risk | Event |   Sbar   |
 |------|------|-------|----------|
 | 41   | 276  | 1     | 1.000    |
 | 51   | 275  | 1     | 1.000    |
