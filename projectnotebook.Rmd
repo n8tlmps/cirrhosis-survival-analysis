@@ -1,0 +1,111 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+df = read.csv("cirrhosis.csv", header=T, sep=",")
+cirrhosis.df = df %>% drop_na()
+```
+
+```{r KM Estimator and Curve}
+library(survival)
+# fitting overall survival curve
+overall.surv<- survfit(Surv(N_Days, Status=="D") ~ 1, data=cirrhosis.df, se.fit=F)
+summary(overall.surv)
+plot(overall.surv, mark.time=T, pch=4, col="dodgerblue", main="Overall KM Survival Curve", xlab="Days", ylab="Survival Distribution Function")
+```
+
+```{r KM curves and log-rank test by Drug v. Placebo}
+drug.surv <- survfit(Surv(N_Days, Status=="D") ~ Drug,
+                     data=cirrhosis.df, se.fit=FALSE)
+survdiff(Surv(N_Days, Status=="D") ~ Drug,
+         data=cirrhosis.df)
+plot(drug.surv, mark.time=T, pch=4, col=c("dodgerblue", "indianred"), main="KM Survival Curves by Drug Group", xlab="Days", ylab="Survival Distribution Function")
+legend("bottomleft", lty=1, col=c("dodgerblue", "indianred"), legend=c("D-penicillamine", "Placebo"), text.col=c("dodgerblue", "indianred"))
+```
+
+```{r KM curves and log-rank test by Sex}
+sex.surv <- survfit(Surv(N_Days, Status=="D") ~ Sex,
+                     data=cirrhosis.df, se.fit=FALSE)
+survdiff(Surv(N_Days, Status=="D") ~ Sex,
+         data=cirrhosis.df)
+plot(sex.surv, mark.time=T, pch=4, col=c("dodgerblue", "indianred"), main="KM Survival Curves by Sex", xlab="Days", ylab="Survival Distribution Function")
+legend("bottomleft", lty=1, col=c("dodgerblue", "indianred"), legend=c("Female", "Male"), text.col=c("dodgerblue", "indianred"))
+```
+
+```{r KM curves and log-rank test by Hepatomegaly}
+hepa.surv <- survfit(Surv(N_Days, Status=="D") ~ Hepatomegaly,
+                     data=cirrhosis.df, se.fit=FALSE)
+survdiff(Surv(N_Days, Status=="D") ~ Hepatomegaly,
+         data=cirrhosis.df)
+plot(hepa.surv, mark.time=T, pch=4, col=c("dodgerblue", "indianred"), main="KM Survival Curves by Hepatomegaly", xlab="Days", ylab="Survival Distribution Function")
+legend("bottomleft", lty=1, col=c("dodgerblue", "indianred"), legend=c("No Hepatomegaly", "Hepatomegaly"), text.col=c("dodgerblue", "indianred"))
+```
+
+```{r KM curves and log-rank test by Ascites}
+ascites.surv <- survfit(Surv(N_Days, Status=="D") ~ Ascites,
+                     data=cirrhosis.df, se.fit=FALSE)
+survdiff(Surv(N_Days, Status=="D") ~ Ascites,
+         data=cirrhosis.df)
+plot(ascites.surv, mark.time=T, pch=4, col=c("dodgerblue", "indianred"), main="KM Survival Curves by Ascites", xlab="Days", ylab="Survival Distribution Function")
+legend("bottomleft", lty=1, col=c("dodgerblue", "indianred"), legend=c("No Ascites", "Ascites"), text.col=c("dodgerblue", "indianred"))
+```
+
+```{r Cox Model}
+# creating reference variables
+drug.rel <- relevel(as.factor(cirrhosis.df$Drug), ref="Placebo")
+sex.rel <- relevel(as.factor(cirrhosis.df$Sex), ref="F")
+ascites.rel <- relevel(as.factor(cirrhosis.df$Ascites), ref="N")
+hepatomegaly.rel <- relevel(as.factor(cirrhosis.df$Hepatomegaly), ref="N")
+spiders.rel <- relevel(as.factor(cirrhosis.df$Spiders), ref="N")
+edema.rel <- relevel(as.factor(cirrhosis.df$Edema), ref="N")
+stage.rel <- relevel(as.factor(cirrhosis.df$Stage), ref=1)
+
+# estimating beta coefficients
+cox.model <- coxph(Surv(N_Days, Status=="D") ~ drug.rel + Age + sex.rel + ascites.rel + hepatomegaly.rel + spiders.rel + edema.rel + Bilirubin + Cholesterol + Albumin + Copper + Alk_Phos + SGOT + Tryglicerides + Platelets + Prothrombin + stage.rel
+                   , data=cirrhosis.df)
+summary(cox.model)
+# estimating the baseline survival function
+base.surv <- survfit(cox.model, se.fit=F)
+summary(base.surv)
+mean(cirrhosis.df$Age)
+mean(cirrhosis.df$Bilirubin)
+mean(cirrhosis.df$Cholesterol)
+mean(cirrhosis.df$Albumin)
+mean(cirrhosis.df$Copper)
+mean(cirrhosis.df$Alk_Phos)
+mean(cirrhosis.df$SGOT)
+mean(cirrhosis.df$Tryglicerides)
+mean(cirrhosis.df$Platelets)
+mean(cirrhosis.df$Prothrombin)
+```
+
+$\hat{S}(t) = [\bar{S}(t)]^{exp(0.1765*D-pencillamine + 0.0000791*(Age - 18189.33) + 0.3757*Male +0.0005899*Ascites + 0.05648*Hepatomegaly + 0.07011*Spiders +0.2436*Edema No Dieuretics + 1.146*Edema + 0.08014*(Bilirubin - 3.333696) + 0.0004731*(Cholesterol - 371.2609) -0.7496*(Albumin - 3.516812) + 0.002442*(Copper - 100.7681) + 5.228E-7*(Alk_Phos - 1996.612) + 0.00371*(SGOT - 124.1192) - 0.0005177*(Tryglicerides - 124.9783) + 0.000841*(Platelets - 261.7717) + 0.2763*(Prothrombin - 10.73551) + 1.406*Stage2 + 1.683*Stage3 + 2.119*Stage4)}$
+
+```{r}
+# predicting the probability of Jordan Franklin -- a fictional character from the show Grey's Anatomy
+# what is the probability of survival for jordan franklin on day 4000 from the start of the study
+
+
+# Diagnosis
+# - Ascites
+# - Hemochromatosis
+# - Liver Disease
+
+# Treatment: paracentesis - fluid draining
+
+# Characteristics:
+# Drug = Placebo, Age=60 years or (22000 days), Sex=M, Ascites=Y, Hepatomegaly=N, Spiders=N, Edema=N, Billirubin=2, Cholesterol=300, Albumin=5, Copper=140, Alk Phos=1000, SGOT=100, Trigylcerides=200, Platelets=250, Prothrombin=13, Stage=4
+```
+
+$S^0(4000) = [0.83889]^{exp(0.0000791*(22000 - 18189.33) + 0.3757 + 0.0005899 + 0.08014*(2 - 3.333696) + 0.0004731*(300 - 371.2609) -0.7496*(5 - 3.516812) + 0.002442*(140 - 100.7681) + 5.228E-7*(1000 - 1996.612) + 0.00371*(100 - 124.1192) - 0.0005177*(200 - 124.9783) + 0.000841*(250 - 261.7717) + 0.2763*(13 - 10.73551) + 2.119)}$
+
+= 0.2290192
+
+
+
+
+
+
