@@ -247,7 +247,18 @@ The two-sided P-value is $2P(Z > 10.4880) = <2e^{-16}$, hence we reject $H_0$ an
 |edema.relS               |2.436e-01|0.46764 |
 |edema.relY               |1.146e+00|0.00595 **|
 |Bilirubin                |8.014e-02|0.00229 **|
-|Cholesterol              4.731e-04 |0.29675 |
+|Cholesterol              |4.731e-04|0.29675 |
+|Albumin                  |-7.496e-01|0.01572 *|
+|Copper                   |2.442e-03|0.03693 *|
+|Alk_Phos                 |5.228e-07|0.98974 |
+|SGOT                     |3.710e-03|0.06247 |
+|Tryglicerides            |-5.177e-04|0.71846|
+|Platelets                |8.410e-04|0.47929|
+|Prothrombin              |2.763e-01|0.01793 *|
+|stage.rel2               |1.406e+00|0.19288|
+|stage.rel3               |1.683e+00|0.10968|
+|stage.rel4               |2.119e+00|0.04711 *|
+
 
 
 
