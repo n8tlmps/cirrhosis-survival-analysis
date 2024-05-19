@@ -226,6 +226,6 @@ The two-sided P-value is $2P(Z > 5.2058) = 2e^{-7}$, hence we reject $H_0$ and c
 The two-sided P-value is $2P(Z > 10.4880) = <2e^{-16}$, hence we reject $H_0$ and conclude that the two survival curves for patients with ascites and those with no ascites are significantly different. The curve for patients with ascites lies drastically below that for patients with no ascites, indicating that presence of ascites is a risk factor for shorter life span.
 
 <h2> Cox Proportional Hazards Model </h2>
-
-	Suppose that besides the event time and an indicator of censoring, data contain measurements of a set of predictors $x_1, ..., x_m$ that do not vary with time. Denote the event time by $T$ and assume that it is a random variable with the hazard function $h_T(t)$. The <b>Cox proportional hazards model</b> assumes that the hazard function has the form:
+<p>Suppose that besides the event time and an indicator of censoring, data contain measurements of a set of predictors $x_1, ..., x_m$ that do not vary with time. Denote the event time by $T$ and assume that it is a random variable with the hazard function $h_T(t)$. The <b>Cox proportional hazards model</b> assumes that the hazard function has the form:</p>
+<img src="https://latex.codecogs.com/svg.image?&space;h_t(t,x_1,...,x_m,\beta_1,...,\beta_m)=h_0(t)exp(\beta_1&space;x_1&plus;...&plus;\beta_m&space;x_m)" />
 
