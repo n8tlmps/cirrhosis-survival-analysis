@@ -371,11 +371,4 @@ The two-sided P-value is $2P(Z > 10.4880) = <2e^{-16}$, hence we reject $H_0$ an
 | 4079 | 14   | 1     | 0.839    |
 | 4191 | 10   | 1     | 0.824    |
 
-
-
-
-
-
-
-
-
+### Fitted Model
