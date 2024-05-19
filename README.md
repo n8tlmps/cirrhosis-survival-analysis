@@ -376,7 +376,7 @@ The fitted Cox proportional hazards model can be written as:
 <img src="fittedmodel.jpg" />
 
 ### Interpretation of Significant Predictors
-At the 5% level,
+At the 5% level, the following predictors are significant:
 <li>age</li>
 <li>presence of edema despite diuretic therapy</li>
 <li>bilirubin</li>
@@ -384,4 +384,4 @@ At the 5% level,
 <li>copper</li>
 <li>prothrombintime</li>
 <li>Stage VI</li>
-are significant.
+
