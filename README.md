@@ -181,3 +181,5 @@ To compare two survival curves, we can use the **log-rank test**. The hypotheses
 <br>The log-rank test statistic is the standardized sum of $e_{1i}$'s over all tables, that is, 
 
 <img src="https://latex.codecogs.com/svg.image?z=\frac{\sum_{i=1}^{k}(e_{1i}-E(e_{1i}))}{\sqrt{\sum_{i=1}^{k}\text{Var}(e_{1i})}}" />
+
+Under $H_0$, this test statistic has approximately a $\mathcal{N}(0, 1)$ distribution.
