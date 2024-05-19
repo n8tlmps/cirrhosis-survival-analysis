@@ -60,7 +60,7 @@ The plot of the KM estimator against time is called the **Kaplan-Meier survival 
 
 <img src="km.jpg">
 
-
+<div style="overflow-x:auto; margin: 0 auto;">
 | time | n.risk | n.event | survival |
 |------|--------|---------|----------|
 | 41   | 276    | 1       | 0.996    |
