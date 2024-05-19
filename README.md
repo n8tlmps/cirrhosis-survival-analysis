@@ -205,5 +205,5 @@ The two-sided P-value is $2P(Z > 0.6325) = 0.5$, hence we fail to reject $H_0$ a
 |-------------------------------|---------|
 |4.5                            |0.03      |
 
-The two-sided P-value is $2P(Z > 2.1213) = 0.03$, hence we reject $H_0$ and conclude that the two survival curves for male and female patients are marginally different. The proportion of male and female studies must also be taken into consideration when comparing probability of survival between the two groups.
+The two-sided P-value is $2P(Z > 2.1213) = 0.03$, hence we reject $H_0$ and conclude that the two survival curves for male and female patients are marginally different. The proportion of females to males must also be taken into consideration when comparing probability of survival between the two groups as there were 242 females and 34 males registered in the study.
 
