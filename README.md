@@ -377,11 +377,12 @@ The fitted Cox proportional hazards model can be written as:
 
 ### Interpretation of Significant Predictors
 At the 5% level, the following predictors are significant:
-<li>age</li>
-<li>presence of edema despite diuretic therapy</li>
-<li>bilirubin</li>
-<li>albumin</li>
-<li>copper</li>
-<li>prothrombintime</li>
-<li>Stage VI</li>
-
+<li>age: As age increases by one day, the estimated hazard of dying from cirrhosis increases by 1.05%.</li>
+<li>presence of edema despite diuretic therapy: The estimated hazard for patients with edema is 314.56% of that for patients with no edema.</li>
+<li>bilirubin:  As bilirubin level increases by 1 mg/dl, the estimated hazard increases by 8.34%.</li>
+<li>albumin: As albumin level increases by 1 gm/dl, the estimated
+hazard changes by -52.75%, or decreases by 52.74%.</li>
+<li>copper: As copper level increases by 1 ug/day, the estimated hazard increases by 0.244%.</li>
+<li>prothrombintime: As prothrombin time increases by 1 second, the estimated hazard increases by 31.82%.</li>
+<li>Stage VI: The estimated hazard of dying from cirrhosis for patients at Stage IV is
+832.28% of that for patients at Stage I.</li>
