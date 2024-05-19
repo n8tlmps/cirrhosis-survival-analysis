@@ -235,6 +235,8 @@ The two-sided P-value is $2P(Z > 10.4880) = <2e^{-16}$, hence we reject $H_0$ an
 </p><br>
 <p>The Cox PH model was fit to the data using R, setting drug, age, sex, ascites, hepatomegaly, spiders, edema, bilirubin, cholesterol, albumin, copper, alkaline phosphatase, SGOT, tryglicerides, platelets, prothrombin, and stage as predictors.</p>
 
+### Data table
+
 |                        | coef     | Pr(>|z|) |
 |------------------------|----------|----------|
 | drug.relD-penicillamine| 1.7653-01| 0.42003  |
