@@ -239,6 +239,20 @@ The two-sided P-value is $2P(Z > 10.4880) = <2e^{-16}$, hence we reject $H_0$ an
 |                         | Coeff   |Pr(>z)| 
 |-------------------------|---------|--------|
 |drug.relD-penicallamine  |1.765e-01|0.42003 |
-|Age                      |7.910e-05|0.01304 |
+|Age                      |7.910e-05|0.01304 *|
 |sex.relM                 |3.757e-01|0.22720 |
+|ascites.relY             |5.899e-04|0.99881 |
+|hepatomegaly.relY        |5.648e-02|0.82575 |
+|spiders.relY             |7.011e-02|0.77839 |
+|edema.relS               |2.436e-01|0.46764 |
+|edema.relY               |1.146e+00|0.00595 **|
+|Bilirubin                |8.014e-02|0.00229 **|
+|Cholesterol              4.731e-04 |0.29675 |
+
+
+
+
+
+
+
 
