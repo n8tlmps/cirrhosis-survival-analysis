@@ -214,7 +214,7 @@ The two-sided P-value is $2P(Z > 2.1213) = 0.03$, hence we reject $H_0$ and conc
 |-------------------------------|---------|
 |27.1                           |2e-07    |
 
-The two-sided P-value is $2P(Z > 5.2058) = 2e^{-07}$, hence we reject $H_0$ and conclude that the two survival curves for patients with hepatomegaly and those with no hepatomegaly are significantly different. The curve for patients with hepatomegaly lies below that for patients with no hepatomegaly, indicating that presence of hepatomegaly is a risk factor for shorter life span.
+The two-sided P-value is $2P(Z > 5.2058) = 2e^{-7}$, hence we reject $H_0$ and conclude that the two survival curves for patients with hepatomegaly and those with no hepatomegaly are significantly different. The curve for patients with hepatomegaly lies below that for patients with no hepatomegaly, indicating that presence of hepatomegaly is a risk factor for shorter life span.
 
 ### Ascites vs. No Ascites
 <img src="ascites.jpg" />
