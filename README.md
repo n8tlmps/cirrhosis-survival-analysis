@@ -192,3 +192,6 @@ The log-rank tests were performed on different patient groups using SAS at the 5
 <li>Presence of Ascites vs. No Ascites</li><br>
 
 <img src="drug.jpg">
+
+The two-sided value is $2P(Z > 0.6363) = 0.5246$.
+
