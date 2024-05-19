@@ -231,5 +231,5 @@ The two-sided P-value is $2P(Z > 10.4880) = <2e^{-16}$, hence we reject $H_0$ an
 <p>Note that in this model, the hazard function depends on time only through the <b>baseline hazard function</b> $h_0(t)$, and therefore, the ratio of hazards of two individuals does not depend on time, which means that the hazards are <b>proportional</b> over time.</p>
 <p>The unknowns of this model are the baseline hazard function $h_0(t)$, we introduce another formulation of the Cox PH model, in terms of the survival function. We write:</p>
 <img src="https://latex.codecogs.com/svg.image?S_T(t,x_1,...,x_m,\beta_1,...,\beta_m)=\exp\left\{-\int_{0}^{t}h_T(u,x_1,\ldots,x_m,\beta_1,\ldots,\beta_m)\,du\right\}=\exp\left\{-\int_{0}^{t}h_0(u)\exp(\beta_1&space;x_1&plus;\ldots&plus;\beta_m&space;x_m)\,du\right\}=[S_0(t)]^{r}" />
-<p>where $S_0(t) = \exp\left\{- \int_{0}^{t} h_0(u) \, du\right\}$ is the <b>baseline survival function</b>, and $r = exp(\beta_1 x_1)$ is the relative risk of an individual.
+<p>where $S_0(t) = \exp\left\{- \int_{0}^{t} h_0(u) \, du\right\}$ is the <b>baseline survival function</b>, and $r = exp(\beta_1 x_1 + ... + \beta_m x_m)$ is the <b>relative risk</b> of an individual.
 </p>
