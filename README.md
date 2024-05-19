@@ -188,6 +188,6 @@ The log-rank tests were performed on different patient groups using SAS at the 5
 <li>D-penicillamine vs. Placebo</li>
 <li>Male vs. Female</li>
 <li>Presence of Hepatomegaly vs. No Presence</li>
-<li>Presence of Ascites vs. No Ascites</li>
+<li>Presence of Ascites vs. No Ascites</li><br>
 
 <img src="drug.jpg">
